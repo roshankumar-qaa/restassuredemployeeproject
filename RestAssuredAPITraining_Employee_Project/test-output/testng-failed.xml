@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [restassuredtestsuite]">
+  <test thread-count="5" name="restassuredtests(failed)">
+    <classes>
+      <class name="com.employeeapi.testCases.TC002_Get_Single_Employee_Record">
+        <methods>
+          <include name="checkStatusLine"/>
+          <include name="checkContentLength"/>
+          <include name="setup"/>
+          <include name="getAllEmployeeData"/>
+          <include name="teaDown"/>
+          <include name="checkStatusCode"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.TC002_Get_Single_Employee_Record -->
+      <class name="com.employeeapi.testCases.TC003_Post_Employee_Record">
+        <methods>
+          <include name="checkResponseBody"/>
+          <include name="teaDown"/>
+          <include name="setup"/>
+          <include name="createEmployee"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.TC003_Post_Employee_Record -->
+      <class name="com.employeeapi.testCases.TC005_Delete_Employee_Record">
+        <methods>
+          <include name="createEmployee"/>
+          <include name="setup"/>
+          <include name="checkResponseBody"/>
+          <include name="teaDown"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.TC005_Delete_Employee_Record -->
+      <class name="com.employeeapi.testCases.TC004_Put_Employee_Record">
+        <methods>
+          <include name="checkResponseBody"/>
+          <include name="setup"/>
+          <include name="createEmployee"/>
+          <include name="teaDown"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.TC004_Put_Employee_Record -->
+    </classes>
+  </test> <!-- restassuredtests(failed) -->
+</suite> <!-- Failed suite [restassuredtestsuite] -->
